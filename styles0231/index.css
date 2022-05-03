@@ -1,0 +1,77 @@
+#nav1{
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    color:white;
+    align-items: center;
+}
+#nav1>div{
+    width:550px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 15px;
+    /* border-left: 1px white solid; */
+}
+#nav1>div a{
+    color:white;
+    text-decoration: none;
+}
+#nav1>div a i{
+    margin-right: 5px;
+}
+#nav1>div a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#nav2{
+    padding: 10px 30px 10px 10px;
+    height: 70px;
+
+    border-bottom: 1px solid rgb(189, 186, 186);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav2 .logo{
+    flex-grow: 1;
+    /* background-color: grey;  */
+    display: flex;
+    align-items:center;
+}
+#nav2 .searchBox{
+    flex-grow: 4;
+    /* background-color: red; */
+    margin-left: 30px;
+    margin-right: 60px;
+    display: flex;
+    align-items:center;
+}
+#nav2 .searchBox input{
+    width: 90%;
+    margin:auto;
+    height:35px;
+    font-size: 14px;
+    border-radius: 5px;
+    border:1px solid grey;
+}
+#nav2 .cartLogo{
+    flex-grow: 1;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: yellow; */
+    font-size: 20px;
+}
+#nav2 .cartLogo a{
+    text-decoration: none;
+    color:rgb(73, 71, 71);
+    font-weight: bolder;
+}
+
+#nav3{
+    height: 30px;
+    width:100%;
+    border-bottom: 1px solid rgb(150, 147, 147);
+}
