@@ -75,3 +75,97 @@
     width:100%;
     border-bottom: 1px solid rgb(150, 147, 147);
 }
+#blwnav1{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    height: 450px;
+    border:1px solid black;
+    margin-top: 20px;
+    padding:20px;
+}
+#blwnav1 img{
+    height: 100%;
+    width:100%;
+}
+#blwnav0{
+    position: relative;
+    width: 100%;
+    height:500px;  
+    margin: auto;
+    overflow: hidden;
+}
+#carousel-slide{
+    /* background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/RADICAL-AND-SPEED-BLACK-BANNER.jpg"); */
+    display:flex;
+    transition:0.7s;
+    /* animation:slider 24s infinite linear; */
+}
+/*--
+@keyframes slider {
+
+    0%{
+        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Clash-V22.jpg");
+    }
+    17%{
+        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/rafa21.jpg");
+    }
+    34%{
+        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Ezone-2022.jpg");
+    }
+    51%{
+        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/PAANY-R.jpg");
+    }
+    68%{
+        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/wilson-squash.jpg");
+    }
+    85%{
+        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/RADICAL-AND-SPEED-BLACK-BANNER.jpg");
+    }
+}  */
+#prevBtn{
+    position: absolute;
+    z-index: 33;
+    top:50%;
+    left:15px;
+    padding:5px;
+    color:rgb(158, 153, 153);
+    border-radius: 50%;
+    background-color: rgb(190, 188, 188);
+    /* display:none; */
+}
+#nextBtn{
+    position: absolute;
+    z-index: 33;
+    top:50%;
+    right:15px;
+    padding:5px;
+    border-radius: 50%;
+    color:rgb(158, 153, 153);
+    /* display:none; */
+    background-color: rgb(187, 179, 179);
+}
+
+#indicators{
+    /* display: inline-flex; */
+    position: absolute;
+    left:50%;
+    bottom:5px;
+    /* border:1px solid red; */
+    transform:translateX(-50%);
+    
+}
+#indicators span{
+    display: inline-block;
+    width:15px ;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(8, 4, 4);
+    cursor: pointer;
+    margin:2px;
+}
+.active{
+    background-color: white !important;
+}
+
+
