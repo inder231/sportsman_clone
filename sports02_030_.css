@@ -162,10 +162,11 @@ img{
 .box1{
     /* border: 1px solid black; */
     text-align: center;
+    
 }
 .addtocart{
-    margin: 8px;
-    width: 60px;
+    margin: 6px;
+    width: 45px;
     /* border-radius: 60%; */
 }
 .box2{
@@ -174,16 +175,19 @@ img{
     /* height: 40px; */
     padding: 0 10px;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3 ,1fr); */
     margin-top: -23px;
+    display: flex;
 }
 
 .para{
     text-decoration: line-through;
     color: red;
 }
-
+.ty,.color{
+    display: none;
+}
 @media only screen and (min-width: 421px) and (max-width: 900px){
     #container02_030{
         /* border: 1px solid black; */
