@@ -24,14 +24,14 @@ let navbar = ()=>{
   </div>
   <div id="nav3">
   <ul>
-  <li><a href="#">SPORTS</a></li>
-  <li><a href="#">FITNESS</a></li>
-  <li><a href="#">SHOES</a></li>
-  <li><a href="#">CLOTHING</a></li>
-  <li><a href="#">ACCESSORIES</a></li>
-  <li><a href="#">LEISURE SPORTS</a></li>
-  <li><a href="#">FANGEAR</a></li>
-  <li><a href="#">BRANDS</a></li>
+  <li><a href="sports02_030_.html">SPORTS</a></li>
+  <li><a href="sports02_030_.html">FITNESS</a></li>
+  <li><a href="sports02_030_.html">SHOES</a></li>
+  <li><a href="sports02_030_.html">CLOTHING</a></li>
+  <li><a href="sports02_030_.html">ACCESSORIES</a></li>
+  <li><a href="sports02_030_.html">LEISURE SPORTS</a></li>
+  <li><a href="sports02_030_.html">FANGEAR</a></li>
+  <li><a href="sports02_030_.html">BRANDS</a></li>
 </ul>
   </div>`;
 }
