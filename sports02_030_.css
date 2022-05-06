@@ -1,0 +1,224 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#container02_030{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    /* width: 98%; */
+    /* height: 600px; */
+    display: flex;
+    padding: 10px;
+    margin: auto;
+}
+
+#sidebar02_030{
+    /* border: 1px solid red; */
+    width: 20%;
+    
+}
+#items02_030{
+    /* border: 1px solid blue; */
+    width: 80%;
+    
+}
+.categoryMenu02_030{
+    /* border: 1px solid black; */
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 17px;
+    height: 150px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+.filter-box a{
+    text-decoration: none;
+    color: gray;
+}
+.filter-box a:hover{
+   color: brown;
+   font-weight: bold;
+}
+.filter-box{
+    display: grid;
+}
+    
+.category{
+    /* border: 1px solid black; */
+    position: absolute;
+    width: 17.4%;
+    margin-top: -10px;
+    /* margin-left: -10px; */
+    
+    float: left;
+    padding: 5px;
+    background-color: rgb(177, 174, 174);
+}
+#itemtop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-size: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid3, .grid4{
+    /* border: 1px solid black; */
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: gainsboro;
+}
+#sort02_030{
+    font-size: large;
+    width: 25%;
+}
+.line{
+    width: 90%;
+}
+#searchby{
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+.sb{
+    background-color: rgb(177, 174, 174);
+    padding: 5px;
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+}
+#open{
+    font-size: 25px;
+    cursor: pointer;
+}
+#close{
+    cursor: pointer;
+    margin: auto;
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    justify-content: end;
+}
+#brandItems{
+    /* border: 1px solid red; */
+    color: gray;
+    padding: 5px;
+    display: none;   
+}
+#open1{
+    font-size: 25px;
+    cursor: pointer;
+}
+#close1{
+    cursor: pointer;
+    margin: auto;
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    justify-content: end;
+}
+#brandItems1{
+    /* border: 1px solid red; */
+    color: gray;
+    padding: 5px;
+    display: none;   
+}
+#open2{
+    font-size: 25px;
+    cursor: pointer;
+}
+#close2{
+    cursor: pointer;
+    margin: auto;
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    justify-content: end;
+}
+#brandItems2{
+    /* border: 1px solid red; */
+    color: gray;
+    padding: 5px;
+    display: none;   
+}
+img{
+    width: 100%;
+}
+#products{
+    /* border: 2px solid orange; */
+    display: grid; 
+     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box1{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.addtocart{
+    margin: 8px;
+    width: 60px;
+    /* border-radius: 60%; */
+}
+.box2{
+    /* border: 1px solid red; */
+    font-size: 14px;
+    /* height: 40px; */
+    padding: 0 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    margin-top: -23px;
+}
+
+.para{
+    text-decoration: line-through;
+    color: red;
+}
+
+@media only screen and (min-width: 421px) and (max-width: 900px){
+    #container02_030{
+        /* border: 1px solid black; */
+        box-sizing: border-box;
+        /* display: flex; */
+        display: grid;
+        /* grid-template-rows: repeat(2,1fr); */
+        padding: 10px;
+        margin: auto;
+    }
+    #sidebar02_030{
+        /* border: 1px solid red; */
+        width: 100%;
+        
+    }
+    #items02_030{
+        /* border: 1px solid blue; */
+        width: 100%;   
+    }
+    
+    #products{
+        /* border: 2px solid orange; */
+        display: grid; 
+         grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        padding: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .category{
+        width: 100%;
+        text-align: left;
+    }
+    .filter-box a:hover{
+        color: brown;
+        font-weight: bold;
+     }
+}
