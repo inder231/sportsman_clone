@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
 #nav1{
     height: 30px;
     background-color: black;
@@ -75,19 +81,39 @@
     width:100%;
     border-bottom: 1px solid rgb(150, 147, 147);
 }
-#blwnav1{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:20px;
-    height: 450px;
-    border:1px solid black;
-    margin-top: 20px;
-    padding:20px;
+#nav3>ul{
+    display:flex;
+    list-style: none;
+    padding:5px 10px;
+    align-items: center;
+    background-color: rgb(209, 202, 202);
+    position:relative;
 }
-#blwnav1 img{
-    height: 100%;
-    width:100%;
+#nav3>ul a{
+    margin:5px;
+    
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
 }
+#nav3>ul>li::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    height: 4px;
+    background-color: orange;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 100%;
+    transition:transform 500ms ease-in;
+}
+#nav3>ul>li:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+
 #blwnav0{
     position: relative;
     width: 100%;
@@ -96,33 +122,9 @@
     overflow: hidden;
 }
 #carousel-slide{
-    /* background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/RADICAL-AND-SPEED-BLACK-BANNER.jpg"); */
     display:flex;
     transition:0.7s;
-    /* animation:slider 24s infinite linear; */
 }
-/*--
-@keyframes slider {
-
-    0%{
-        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Clash-V22.jpg");
-    }
-    17%{
-        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/rafa21.jpg");
-    }
-    34%{
-        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Ezone-2022.jpg");
-    }
-    51%{
-        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/PAANY-R.jpg");
-    }
-    68%{
-        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/wilson-squash.jpg");
-    }
-    85%{
-        background-image: url("https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/RADICAL-AND-SPEED-BLACK-BANNER.jpg");
-    }
-}  */
 #prevBtn{
     position: absolute;
     z-index: 33;
@@ -166,6 +168,308 @@
 }
 .active{
     background-color: white !important;
+}
+
+#blwnav1{
+    height: 600px;
+    width: 100%;
+    /* border:1px solid black; */
+    display: flex;
+    margin: 10px auto;
+}
+#blwnav1>div{
+    /* border:5px solid red; */
+    width: 435px;
+    margin:10px;
+}
+/* .blwnav1_1{
+    /* border:5px solid red; */
+/* } */ 
+#blwnav1 img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+}
+.blwnav1_1, .blwnav1_2, .blwnav1_3{
+    position: relative;
+    overflow: hidden;
+}
+
+#hoverOnInfo1,#hoverOnInfo2,#hoverOnInfo3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    transition: all 1s linear;
+    transform: translateY();
+    text-align: center;
+    width: 100%;
+    background-color: rgb(102, 97, 97);
+    mix-blend-mode: normal;
+    color: rgb(245, 240, 240);
+    line-height: 1.7;
+}
+#hoverOnInfo1 a,#hoverOnInfo2 a,#hoverOnInfo3 a{
+    display:block;
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    margin:5px auto;
+    /* background-color: wheat; */
+    border:1px solid rgb(80, 78, 78);
+    cursor: pointer;
+    mix-blend-mode: screen;
+}
+#hoverOnInfo1 a:hover, #hoverOnInfo2 a:hover, #hoverOnInfo3 a:hover{
+    background-color: white;
+    color:grey;
+    
+}
+.blwnav1_1:hover #hoverOnInfo1, .blwnav1_2:hover #hoverOnInfo2, .blwnav1_3:hover #hoverOnInfo3{
+    transition:all 1s linear;
+    transform: translateY();
+    height: 40%;
+}
+#blwnav2{
+    display: flex;
+    width:100%;
+    
+    padding:10px;
+    border:1px solid rgb(184, 180, 180);
+}
+#blwnav2_images_box{
+    width: 95%;
+    width: 720px;
+    /* border:1px solid black; */
+    display: flex;
+    overflow: hidden;
+}
+#blwnav2_div2{
+   
+    padding:40px 10px 0px 15px;
+    font-size: 16px;
+    line-height:1.5;
+}
+#blwnav2_images_buttons{
+/* background-color: red; */
+display: flex;
+justify-content: space-evenly;
+}
+#blwnav2_images_buttons button{
+    padding:10px 25px;
+    text-decoration: none;
+    border:none;
+    cursor: pointer;
+}
+#blwnav2_images_buttons button:hover{
+    background-color: black;
+    color:white;
+}
+#blwnav2_div2 p{
+    color:grey;
+    margin: 15px 0px 25px 0px;
+
+}
+#blwnav2_div2 #readMoreBtn{
+    height: 40px;
+    width: 100px;
+    color:grey;
+}
+/* #blwnav2Heading{
+    text-align: center;
+    font-weight: bolder;
+    /* margin:20px 0px 20px 0px ; */
+/* } */
+
+#blwnav3{
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-evenly;
+}
+#blwnav3 h3{
+    text-align: center;
+    color: grey;
+}
+#blwnav4 img{
+    padding: 5px;
+    text-align: center;
+    height: 500px;
+    width:100%;
+}
+#logoSlider{
+    margin: auto;
+    position: relative;
+    width: 95%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slider_track{
+    display: flex;
+    width: calc(250px * 26);
+    
+    animation: scroll 50s cubic-bezier(0.0,0.0,1.0,1.0) infinite;
+}
+.slider_track:hover{
+    animation-play-state:paused;
+}
+.slide{
+    width: 250px;
+    display:flex;
+    align-items: center;
+    padding:15px;
+}
+.slide img{
+    width: 60%;
+}
+@keyframes scroll {
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*8));
+    }
+}
+
+/* @keyframes slowSlide {
+    0%{
+        width:-250px;
+    }
+    7%{
+        width:-500px;
+    }
+    14%{
+        width:-750px;
+    }
+    21%{
+        width:-1000px;
+    }
+    28%{
+        width:-1500px;
+    }
+    35%{
+        width:-1750px;
+    }
+    100%{
+        width:-2000px;
+    }
+
+} */
+#blwnav5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px 20px;
+}
+#blwnav5>div:nth-child(2){
+    /* border: 1px solid; */
+    padding: 0px 20px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:grey;
+}
+#blwnav5>div:nth-child(2) h3{
+    color:black;
+}
+#blwnav5>div:nth-child(2) button{
+    display:block;
+    width: 200px;
+    height:50px;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+}
+#blwnav5>div img{
+    width: 100%;
+}
+
+#blwnav6Testimonials{
+    text-align: center;
+    width: 95%;
+    margin:20px auto;
+}
+#blwnav6Testimonials p{
+    margin:20px auto;
+    color:grey;
+}
+#blwnav6Testimonials p::after{
+    content:"Rajnish, New Delhi";
+    color:black;
+    font-weight: bold;
+}
+#blwnav6Testimonials button{
+    height: 40px;
+    width:150px;
+    font-size: 22px;
+}
+#blwnav6Testimonials button:hover{
+    border:1px solid rgb(219, 170, 78);
+    
+    color:rgb(228, 170, 63)
+}
+#blwnav7{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: grey;
+    padding:20px;
+}
+#blwnav7 i{
+    display: block;
+    color:black;
+    margin-bottom: 5px;
+}
+#blwnav7 i:hover{
+    color:orangered;
+}
+#blwnav7 a{
+    color: black;
+}
+#blwnav8{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 400px;
+    background-color: #3f3e3e;
+}
+#blwnav8>div{
+    /* border:1px white solid; */
+    padding: 20px;
+}
+#blwnav8>div:nth-child(1) h4,#blwnav8>div:nth-child(2) h4{
+    margin-bottom: 20px;
+    color: white;
+
+}
+#blwnav8>div:nth-child(1) a,#blwnav8>div:nth-child(2) a{
+    color:white;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#blwnav8>div:nth-child(1) ul,#blwnav8>div:nth-child(2) ul{
+    list-style: none;
+}
+#blwnav8>div:nth-child(3) h4{
+    color:white;
+    margin-bottom: 50px;
+}
+#blwnav8>div:nth-child(4)>h4{
+    color:white;
+    margin-bottom: 50px;
+}
+#blwnav8>div:nth-child(4)>div h4{
+    color:white;
+    margin-bottom: 20px;
+}
+#blwnav8>div:nth-child(4)>div i{
+    margin-bottom: 30px;
+    color: white;
+    padding:2px;
+    cursor: pointer;
 }
 
 
