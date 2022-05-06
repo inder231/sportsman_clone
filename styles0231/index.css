@@ -81,6 +81,39 @@
     width:100%;
     border-bottom: 1px solid rgb(150, 147, 147);
 }
+#nav3>ul{
+    display:flex;
+    list-style: none;
+    padding:5px 10px;
+    align-items: center;
+    background-color: rgb(209, 202, 202);
+    position:relative;
+}
+#nav3>ul a{
+    margin:5px;
+    
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+}
+#nav3>ul>li::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    height: 4px;
+    background-color: orange;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 100%;
+    transition:transform 500ms ease-in;
+}
+#nav3>ul>li:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+
 #blwnav0{
     position: relative;
     width: 100%;

@@ -22,6 +22,17 @@ let navbar = ()=>{
         <a href="cart.html"><i class="fa fa-cart-shopping fa-2x"></i>Shopping Cart</a>
     </div>
   </div>
-  <div id="nav3"></div>`;
+  <div id="nav3">
+  <ul>
+  <li><a href="#">SPORTS</a></li>
+  <li><a href="#">FITNESS</a></li>
+  <li><a href="#">SHOES</a></li>
+  <li><a href="#">CLOTHING</a></li>
+  <li><a href="#">ACCESSORIES</a></li>
+  <li><a href="#">LEISURE SPORTS</a></li>
+  <li><a href="#">FANGEAR</a></li>
+  <li><a href="#">BRANDS</a></li>
+</ul>
+  </div>`;
 }
 export {navbar};
