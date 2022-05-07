@@ -1,5 +1,30 @@
-import { navbar } from "../components/navbar.js";
-document.getElementById("navbar").innerHTML = navbar();
+// import { navbar } from "../components/navbar.js";
+// document.getElementById("navbar").innerHTML = navbar();
+//========================================================
+// var slides = document.querySelectorAll(".slide");
+// let btns = document.querySelectorAll(".btn");
+// let currentSlide = 1;
+// var manualNav = function(manual){
+//     slides.forEach((slide)=>{
+//         slide.classList.remove("active");
+        
+//         btns.forEach((btn)=>{
+//             btn.classList.remove("active");
+//         });
+
+//     });
+
+//     slides[manual].classList.add("active");
+    
+//     btns[manual].classList.add("active");
+// }
+// btns.forEach((btn,i)=>{
+//     btn.addEventListener("click",()=>{
+//         manualNav(i);
+//         currentSlide = i;
+//     })
+// })
+//==========================================
 
 
 const carousalSlide= document.querySelector("#carousel-slide");
@@ -47,67 +72,50 @@ carousalSlide.addEventListener("transitionend",()=>{
 })
 
 // let indicators = document.querySelector("#indicators");
-let btn1 = document.querySelector("#btn1");
-let btn2 = document.querySelector("#btn2");
-let btn3 = document.querySelector("#btn3");
-let btn4 = document.querySelector("#btn4");
-let btn5 = document.querySelector("#btn5");
-let btn6 = document.querySelector("#btn6");
+let btns = document.querySelectorAll(".btn");
+let slides = document.querySelectorAll("#carousel-slide img");
+let currentSlide = 1;
+var manualNav = function(manual){
+    btns.forEach((btn)=>{
+        btn.classList.remove("active");
+    })
+    btns[manual].classList.add("active");
+}
+btns.forEach((btn,i)=>{
+    btn.addEventListener("click",()=>{
+        manualNav(i);
+        currentSlide = i;
+        carousalSlide.style.transform = 'translateX('+(-size*currentSlide)+'px)';
+    })
+});
 
-btn1.addEventListener("click",()=>{
-    carousalSlide.style.transform = 'translateX(0%)';
-    btn1.classList.add("active");
-    btn2.classList.remove("active");
-    btn3.classList.remove("active");
-    btn4.classList.remove("active");
-    btn5.classList.remove("active");
-    btn6.classList.remove("active");
-})
-btn2.addEventListener("click",()=>{
-    carousalSlide.style.transform = 'translateX(-100%)';
-    btn2.classList.add("active");
-    btn1.classList.remove("active");
-    btn3.classList.remove("active");
-    btn4.classList.remove("active");
-    btn5.classList.remove("active");
-    btn6.classList.remove("active");
-})
-btn3.addEventListener("click",()=>{
-    carousalSlide.style.transform = 'translateX(-200%)';
-    btn3.classList.add("active");
-    btn2.classList.remove("active");
-    btn1.classList.remove("active");
-    btn4.classList.remove("active");
-    btn5.classList.remove("active");
-    btn6.classList.remove("active");
-})
-btn4.addEventListener("click",()=>{
-    carousalSlide.style.transform = 'translateX(-300%)';
-    btn4.classList.add("active");
-    btn2.classList.remove("active");
-    btn3.classList.remove("active");
-    btn1.classList.remove("active");
-    btn5.classList.remove("active");
-    btn6.classList.remove("active");
-})
-btn5.addEventListener("click",()=>{
-    carousalSlide.style.transform = 'translateX(-400%)';
-    btn5.classList.add("active");
-    btn2.classList.remove("active");
-    btn3.classList.remove("active");
-    btn4.classList.remove("active");
-    btn1.classList.remove("active");
-    btn6.classList.remove("active");
-})
-btn6.addEventListener("click",()=>{
-    carousalSlide.style.transform = 'translateX(-500%)';
-    btn6.classList.add("active");
-    btn2.classList.remove("active");
-    btn3.classList.remove("active");
-    btn4.classList.remove("active");
-    btn5.classList.remove("active");
-    btn1.classList.remove("active");
-})
+var repeat = function(){
+    let  i= 0;
+    var repeater = ()=>{
+        setTimeout(() => {
+            
+            carousalSlide.style.transform = 'translateX('+(-size*(i+1))+'px)';
+            
+            btns.forEach((btn)=>{
+                btn.classList.remove("active");
+                btns[i].classList.add("active");
+            })
+            
+            i++;
+            if(slides.length-2==i){
+                i=0;
+            }
+            if(i>=slides.length-1){
+                return;
+            }
+        
+            repeater();
+        }, 5000);
+    }
+    repeater();
+}
+repeat()
+
 
 document.querySelector("#blwnav2_images_buttons1").addEventListener("mouseover",()=>{
     console.log('over 1')

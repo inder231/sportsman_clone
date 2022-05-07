@@ -1,6 +1,6 @@
 
-import {navbar} from "../U3_sportsman_clone/components/navbar.js"
-document.getElementById("navbar1").innerHTML=navbar();
+// import {navbar} from "../U3_sportsman_clone/components/navbar.js"
+// document.getElementById("navbar1").innerHTML=navbar();
 
 import { sidebar } from "./components/sidebar02_030.js";
 document.getElementById("sidebar02_030").innerHTML=sidebar();
