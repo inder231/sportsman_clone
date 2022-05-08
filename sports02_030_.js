@@ -648,9 +648,10 @@ var clothsData = [
   });
 
   function addToCart(elem){
-    cartdata.push(elem);
-    localStorage.setItem("SportsJamCart",JSON.stringify(cartdata));
+   console.log(elem)
+    localStorage.setItem("SportsJamCart",JSON.stringify(elem));
     alert(" item Added to cart");
+    // window.location.href="../cart.html"
   }
 
   const btns =document.querySelectorAll(".btn");
@@ -735,3 +736,4 @@ var clothsData = [
       });
     });
   }
+  
