@@ -1,5 +1,5 @@
 *{
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -61,6 +61,7 @@
     justify-content: space-evenly;
     align-items: baseline;
     font-size: 15px;
+    padding: 10px;
 }
 .grid{
     display: grid;
@@ -168,21 +169,16 @@ img{
 }
 .addtocart{
     /* margin: px; */
-    width: 45px;
-    height: 35px;
-    margin-top: 10px;
+    width: 37px;
+    height: 30px;
+    /* margin-top: 10px; */
     cursor: pointer;
-    /* border-radius: 60%; */
 }
 .box2{
     /* border: 1px solid red; */
     font-size: 14px;
-    /* height: 40px; */
+    margin-top: 5px;
     padding: 0 10px;
-    text-align: center;
-    /* display: grid;
-    grid-template-columns: repeat(3 ,1fr); */
-    margin-top: -23px;
     display: flex;
     justify-content: space-between;
 }
