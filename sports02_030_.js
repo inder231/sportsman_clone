@@ -1,6 +1,6 @@
 
-import {navbar} from "../U3_sportsman_clone/components/navbar.js"
-document.getElementById("navbar1").innerHTML=navbar();
+// import {navbar} from "../U3_sportsman_clone/components/navbar.js"
+// document.getElementById("navbar1").innerHTML=navbar();
 
 import { sidebar } from "./components/sidebar02_030.js";
 document.getElementById("sidebar02_030").innerHTML=sidebar();
@@ -49,16 +49,6 @@ var clothsData = [
     },
     {
       image_url:
-        "https:////storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YNTS1715HRR.jpg",
-      name: "Yonex Mens Polo T-Shirt",
-      brand:"YONEX",
-      type:"Clothing",
-      color:"red💖",
-      price: 399,
-      strikedoffprice: 799,
-    },
-    {
-      image_url:
         "https://storage.sg.content-cdn.io/cdn-cgi/image/%7Bwidth%7D,%7Bheight%7D,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1022A115300.jpg",
       name: "ASICS GEL QUANTUM 90 RUNNING SHOES",
       brand:"ASICS",
@@ -66,6 +56,16 @@ var clothsData = [
       color:"teal💜",
       price: 3999,
       strikedoffprice: "5,499",
+    },
+    {
+      image_url:
+        "https:////storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YNTS1715HRR.jpg",
+      name: "Yonex Mens Polo T-Shirt",
+      brand:"YONEX",
+      type:"Clothing",
+      color:"red💖",
+      price: 399,
+      strikedoffprice: 799,
     },
     {
       image_url:
@@ -613,7 +613,10 @@ var clothsData = [
   var cartdata=JSON.parse(localStorage.getItem("SportsJamCart"))||[]
   clothsData.map(function(elem){
       var box=document.createElement("div");
-      box.setAttribute("class","box1")
+      box.setAttribute("class","box1");
+      box.addEventListener("click",function(){
+        window.location.href="cart.html";    /*adding next page(redirecting to next page)*/
+      });
       var box2=document.createElement("div");
       box2.setAttribute("class","box2");
       var img=document.createElement("img");
@@ -637,8 +640,8 @@ var clothsData = [
       strikedoffprice.innerText=`₹ ${elem.strikedoffprice}`;
       var btn=document.createElement("img")
       btn.src="https://www.seekpng.com/png/detail/134-1344280_add-items-to-cart-minimalist-shopping-cart.png";
-      btn.setAttribute("class","addtocart");
-      btn.addEventListener("click",function(){
+      btn.setAttribute("class","addtocart");   
+      btn.addEventListener("click",function(){  /*adding product to cart*/
         addToCart(elem);
       });
       box.append(img,name,box2);
@@ -662,7 +665,7 @@ var clothsData = [
       const filter=e.target.dataset.filter;
       console.log(filter);
       // console.log(t1);
-      products.forEach((prod)=>{
+      products.forEach((prod)=>{     /*sorting by category(type)*/
         if(filter=="All"){
           prod.style.display="grid";
         }
@@ -684,9 +687,9 @@ var clothsData = [
     });
   }
 
-  const colrs=document.querySelectorAll(".colr");
+  const colrs=document.querySelectorAll(".colr");   /*sorting by color*/
   for(let k=0;k<colrs.length;k++){
-    colrs[k].addEventListener("change",(e)=>{
+    colrs[k].addEventListener("change",(e)=>{  /*c1.checked*/
       e.preventDefault();
       const filter1=e.target.dataset.filter;
       console.log(filter1);
@@ -710,7 +713,7 @@ var clothsData = [
     });
   }
 
-  const brands=document.querySelectorAll(".brands");
+  const brands=document.querySelectorAll(".brands");      /*sorting by brand*/
   for(let k=0;k<brands.length;k++){
     brands[k].addEventListener("change",(e)=>{
       e.preventDefault();

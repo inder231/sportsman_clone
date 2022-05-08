@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{
+            color: rgb(129, 126, 126);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .last{
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .para{
+            font-size: 15px;
+            word-spacing: 2px;
+        }
+        li{
+            list-style: none;
+        }
+        b{
+            color: black;
+        }
+        .b1{
+           margin-bottom: 25px;
+        }
+        #nav1{
+        height: 30px;
+        background-color: black;
+        display: flex;
+        justify-content: end;
+        color:white;
+        align-items: center;
+    }
+    #about{
+        width: 96%;
+        margin: auto;
+    }
+    #nav1>div{
+        width:550px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 15px;
+        /* border-left: 1px white solid; */
+    }
+    #nav1>div a{
+        color:white;
+        text-decoration: none;
+    }
+    #nav1>div a i{
+        margin-right: 5px;
+    }
+    #nav1>div a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    #nav2{
+        padding: 10px 30px 10px 10px;
+        height: 70px;
+
+        border-bottom: 1px solid rgb(189, 186, 186);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #nav2 .logo{
+        flex-grow: 1;
+        /* background-color: grey;  */
+        display: flex;
+        align-items:center;
+    }
+    #nav2 .searchBox{
+        flex-grow: 4;
+        /* background-color: red; */
+        margin-left: 30px;
+        margin-right: 60px;
+        display: flex;
+        align-items:center;
+    }
+    #nav2 .searchBox input{
+        width: 90%;
+        margin:auto;
+        height:35px;
+        font-size: 14px;
+        border-radius: 5px;
+        border:1px solid grey;
+    }
+    #nav2 .cartLogo{
+        flex-grow: 1;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        /* background-color: yellow; */
+        font-size: 20px;
+    }
+    #nav2 .cartLogo a{
+        text-decoration: none;
+        color:rgb(73, 71, 71);
+        font-weight: bolder;
+    }
+
+    #nav3{
+        height: 30px;
+        width:100%;
+        border-bottom: 1px solid rgb(150, 147, 147);
+    }
+    </style>
+</head>
+<body>
+
+    <div id="nav1">
+        <div>
+            <h4><a href="#"><i class="fa-solid fa-phone"></i>Call Us:+91-9555461555</a></h4>
+            <h4><a href="#"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a></h4>
+            <h4><a href="#"><i class="fa-solid fa-user"></i>Create Account</a></h4>
+            <h4><a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></h4>
+        </div>
+      </div>
+      <div id="nav2">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/logo.jpg"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="searchBox">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="cartLogo">
+            <a href="cart.html"><i class="fa fa-cart-shopping fa-2x"></i>Shopping Cart</a>
+        </div>
+      </div>
+      <div id="nav3"></div>
+
+   <div id="about">
+    <h2>What We Do @ SportsJam.In</h2>
+    <div class="b1"><b>Hello  Strikers!</b></div>
+    <div class="para">
+        
+            <li>Let’s get going to dig out the best products in your game & make ‘em available right at your doorstep. We will be glad to serve you in any city in India & speedily, so that you enjoy your product in the coming weekend! All this, with no shipping charges if you purchase above Rs.1000.</li> <br/>
+            <li>Scout through your favourite brands with latest technologies. Just click & be its proud owner, at the best available price in the market. Come, help us help you to fly high with your new & improved game with high quality sportsgear!</li><br/>
+            <li>Right from Racquets, Balls, Bats, Clubs to Shoes, Caps & other thousands of accessories, a wonderful selection awaits you to take a pick from. Give your wishlist to us & we will get you what you want.</li><br/>
+            <li>Secure payment methods with seamless transactions & a commited helpline for all your queries.</li><br/>
+            <li>Blog in to learn about your game & give your juniors a tip or two. Ask us to help you select your product, we will be glad to help you.</li><br/>
+            <li>Hey kids – don’t despair!! Check out our Juniors section for a plethora of goods , just to suit you! There’s something for every sportsman in here.</li><br/>
+        
+    </div> <br/>
+    <b>Enjoy your game!</b> <br/>
+    <div class="last"><b>-Team Sportsjam.in</b></div>
+   </div>
+</body>
+</html>
