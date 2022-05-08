@@ -58,13 +58,13 @@ function sidebar(){
         </div>
         <div id="brandItems2">
             <div id="close2">-</div>
-            <input type="checkbox" class="colr" data-filter="blue💙">blue💙 <br>
-            <input type="checkbox" class="colr" data-filter="red💖">red💖 <br>
-            <input type="checkbox" class="colr" data-filter="white🤍">white🤍<br>
-            <input type="checkbox" class="colr" data-filter="black🖤">black🖤 <br>
-            <input type="checkbox" class="colr" data-filter="green💚">green💚 <br>
-            <input type="checkbox" class="colr" data-filter="orange🧡">orange🧡 <br>
-            <input type="checkbox" class="colr" data-filter="yellow💛">yellow💛 <br>
+            <input type="checkbox" class="colr" data-filter="blue💙">Blue <br>
+            <input type="checkbox" class="colr" data-filter="red💖">Red <br>
+            <input type="checkbox" class="colr" data-filter="white🤍">White<br>
+            <input type="checkbox" class="colr" data-filter="black🖤">Black <br>
+            <input type="checkbox" class="colr" data-filter="green💚">Green <br>
+            <input type="checkbox" class="colr" data-filter="orange🧡">Orange <br>
+            <input type="checkbox" class="colr" data-filter="yellow💛">Yellow <br>
             
         </div>
 
