@@ -1,0 +1,411 @@
+#Rcontainer{
+    box-sizing: border-box;
+}
+#Rshopping_nav{
+    color: #000;
+    display: block;
+    font-family: open_sanssemibold,Arial,Verdana,Helvetica,sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.01rem;
+    font-weight: 400;  
+    padding:10px 10px;
+    background-color: rgb(219,219,219);
+    padding-left: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    height: 20px;
+    line-height: 25px;
+}
+
+#Rtable{
+    text-indent: initial;
+    border-spacing: 0px;
+
+}
+#Rbox2{
+    background-color: rgb(238,238,238);
+    /* padding: 10px; */
+    margin-top: -20px;
+   
+}
+
+
+
+
+#Rtr > th:nth-child(1){
+    width: 713px;
+    border: solid 1px rgb(204,204,204);
+    /* border-bottom: 0; */
+    padding: 5px;
+    text-align: left;
+    display: table-cell;
+    padding-left: 10px;
+    font-weight: 400; 
+    font-size: 14px;
+    color: #333;
+    line-height: 1.87;
+    font-family: opensans,Arial,Helvetica;
+    border-right: 0;
+    
+  
+}
+
+#Rtr th{
+    width: 129px;
+    border: solid 1px rgb(204,204,204);
+    margin: 0;
+    padding: 5px;
+    text-align:left;
+    display: table-cell;
+    padding-left: 10px;
+    font-weight: 400; 
+    font-size: 14px;
+    color: #333;
+    line-height: 1.87;
+    font-family: opensans,Arial,Helvetica;
+    border-right: 0;
+
+  
+}
+#Rtr th:nth-child(2){
+    width: 129px;
+    border: solid 1px rgb(204,204,204);
+    margin: 0;
+    padding: 5px;
+    text-align:left;
+    display: table-cell;
+    padding-left: 10px;
+    font-weight: 400; 
+    font-size: 14px;
+    color: #333;
+    line-height: 1.87;
+    font-family: opensans,Arial,Helvetica;
+    border-right: 0;
+
+  
+}
+#Rremove{
+    width:120px;
+}
+
+#Rbuttons{
+    display: flex;
+    justify-content: space-between;
+}
+#Rbuttons > div {
+    color: #666;
+    height: 31px;
+    text-decoration: none;
+    margin-top: 3px;
+  
+}
+#Rbuttons > div:nth-child(1) > button {
+    color: rgb(255, 255, 255);
+    height: 35px;
+    padding:0px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(164,164,164);
+    border-radius:2px ;
+    border: 0px;
+}
+#Rbuttons > div:nth-child(2) > button {
+    color: rgb(255, 255, 255);
+    height: 30px;
+    padding:3px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    background-color:rgb(255,102,0);
+    border-radius:2px ;
+    border: 0px;
+}
+
+#Rsummary{
+    font-family: opensans,Arial,Helvetica,sans-serif;
+    margin-top: 25px;
+    
+}
+#Rsummary > div:nth-child(1){
+    border:1px solid #ccc;
+    height: 38px;
+    background-color:rgb(242,242,242);
+}
+#Rsummary > div:nth-child(1) > h2{
+   margin: 0;
+   padding-top: 0;
+   line-height: 38px;
+   padding-left: 15px;
+   font-family: opensans,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(106,106,106);
+}
+
+
+#Rsummary > div{
+    border:0.1rem solid #ccc;
+    height: 36px;
+    border-top: none;
+  
+}
+#summary_box{
+    display: flex;
+    
+}
+#summary_box > div:nth-child(1){
+    /* border: 2px solid red; */
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(100, 99, 99);
+    width: 73%;
+    text-align: right;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#summary_box > div:nth-child(2){
+    text-align: right;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(100, 99, 99);
+    font-family: open sans!important;
+    padding: 10px;
+    width: 22%;
+
+}
+#voucherflex{
+    display: flex;
+    /* border: 2px solid black; */
+    height: 50px;
+    width: 40%;
+    gap: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+   
+}
+
+
+#voucherflex > div:nth-child(2) {
+    /* border: 2px solid green; */
+    width: 320px;
+    padding-left: 10px;
+}
+#voucherflex > div:nth-child(2) > p {
+    margin-top: 5px;
+}
+.Rinfo{
+    font-size: 14px;
+   font-weight:600;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.Rinfo2{
+    font-size: 11px;
+    color: #666;
+   
+}
+
+#red_dis{
+    background-color:rgb(153,153,153) ;
+    height: 40px;
+    width: 95px;
+    
+}
+#red_dis > p{
+    text-transform: uppercase;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    width: 80px;
+    padding: 1px;
+    margin-left: 5px;
+    color: white;
+    font-weight: 900;
+    line-height: 13px;
+    border:1.5px solid whitesmoke;
+    border-style: dashed;
+}
+
+
+/* ======================================== */
+#voucherflex2{
+    display: flex;
+    /* border: 2px solid rgb(253, 1, 1); */
+    height: 30px;
+    /* width: 30%; */
+    gap: 10px;
+
+}
+#voucherflex2 > div:nth-child(1){
+    
+    /* border: 2px solid rgb(69, 50, 245); */
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    text-align: left;
+    width: 99px;
+    
+
+}
+#input_voucher{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 320px;
+    height:20px;
+    
+    border: 1px solid  rgb(204, 201, 201);
+}
+
+
+
+#applyButton{
+    height: 40px;
+    /* border: 2px solid red; */
+
+}
+#applyButton > button{
+    
+    
+    padding:4px 8px;
+    margin-left: 375px;
+    background-color:rgb(153,153,153) ;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+}
+
+
+
+
+/* ================javawork============================ */
+
+#javascript_work{
+   /* display: flex; */
+   border: 1px solid rgb(255, 255, 255);
+   height:250px;
+   
+    
+}
+#java{
+  
+    overflow:scroll;
+    overflow-x: scroll;
+  
+   
+}
+
+#imagebox{
+    border: 1px solid rgb(204,204,204);
+    width:99.9%;
+    height: 145px;
+    display: flex;
+    /* gap: 20px; */
+    /* padding: 10px; */
+    border-top: none;
+  
+}
+#itemImage{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(204,204,204);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+#imgTitle{
+    font-size: 12px;
+    margin-top:0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    width:60%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+    height: 120px;
+   padding-left: 10px;
+}
+#imgPrice{
+    border: 1px solid rgb(204,204,204);
+    width:12.72%;
+    height: 180px;
+    margin-top:-1px;
+    border-top: 0;
+    border-bottom: 0;
+    padding:10px;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-right: 0;
+
+
+    display: flex;
+    /* gap: 10px; */
+  
+
+    /* border-top: none; */
+
+}
+
+#imgPrice > button{
+    height: 20px;
+   
+}
+.Rcount{
+    margin-top: 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    height: 18px;
+    width: 25px;
+    text-align: center;
+    padding: 0;
+    
+}
+.quan_css > button:nth-child(1){
+    border-bottom-left-radius:  3px;
+    border-top-left-radius:3px ;
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    
+}
+.btn2{
+    border-bottom-right-radius:  3px;
+    /* background-color: red; */
+    border-top-right-radius:3px ;
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+
+
+
+
+#javascript_work > div > button{
+    width:2px;
+    height: 10px;
+    
+}
+
+
+#removeButt{
+    height:20px;
+    width: 25px;
+    color: red;
+    margin-left: 10px;
+    border: 2px solid red;
+   margin-top: 0;
+   text-align: center;
+   font-weight: 600;
+}
+
+
+
+
+
+
