@@ -1,4 +1,4 @@
-var x = JSON.parse(localStorage.getItem("data1")) || [];
+var x = JSON.parse(localStorage.getItem("buyItem")) || [];
 
 console.log(x);
 
@@ -10,15 +10,15 @@ function appendItem(x) {
     div1.setAttribute("id", "imagebox");
 
     var title = document.createElement("h3");
-    title.innerText = elem.title;
+    title.innerText = elem.name;
     title.setAttribute("id", "imgTitle");
 
     var image1 = document.createElement("img");
-    image1.src = elem.image;
+    image1.src = elem.image_url;
     image1.setAttribute("id", "itemImage");
 
     var price = document.createElement("h3");
-    price.innerText = `₹ ${elem.mrp}`;
+    price.innerText = `₹ ${elem.price}`;
     price.setAttribute("id", "imgPrice");
 
     var quantity = document.createElement("div");
@@ -34,7 +34,7 @@ function appendItem(x) {
     });
 
     var p = document.createElement("p");
-    p.innerText = elem.quant;
+    p.innerText = "1";
     p.className = "Rcount";
     p.setAttribute("id", "b");
 
@@ -50,7 +50,7 @@ function appendItem(x) {
     // =======================
 
     var total = document.createElement("h3");
-    total.innerText=elem.mrp*elem.quant;
+    total.innerText=elem.price*elem.quant;
     total.setAttribute("id", "imgPrice");
     total.className="totalling";
 
@@ -78,10 +78,11 @@ appendItem(x);
 Total()
 
 function increaseQuant(index) {
-  x[index].quant++;
-
+   let res = x[index].quant++;
+  document.querySelector(".Rcount").innerText = res;
+  console.log("res")
   console.log("ok1");
-  localStorage.setItem("data1", JSON.stringify(x));
+  localStorage.setItem("buyItem", JSON.stringify(x));
  
   appendItem(x)
   Total()
@@ -89,16 +90,18 @@ function increaseQuant(index) {
 }
 
 function decreaseQuant(index) {
-  x[index].quant--;
+  
+  let res = x[index].quant--;
+  document.querySelector(".Rcount").innerText = res;
   console.log("ok2");
-  localStorage.setItem("data1", JSON.stringify(x));
+  localStorage.setItem("buyItem", JSON.stringify(x));
   appendItem(x);
   Total()
   
 }
 function deleteItem(index){
   x.splice(index,1)
-  localStorage.setItem("data1", JSON.stringify(x))
+  localStorage.setItem("buyItem", JSON.stringify(x))
   appendItem(x)
   Total()
 

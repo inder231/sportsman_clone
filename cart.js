@@ -1,9 +1,15 @@
 
 var count = 1;
 
-var product = JSON.parse(localStorage.getItem("SportsJamCart"));
+var res = JSON.parse(localStorage.getItem("SportsJamCart"));
+let product = res[0];
 var cart = JSON.parse(localStorage.getItem("shoppingCart"))||[];
+document.querySelector("#rakh").addEventListener("click",()=>{
+    
+    localStorage.setItem("buyItem",JSON.stringify([product]));
 
+    window.location.href = "cartItem.html"
+});
 console.log(product)
 var prodName = document.createElement("h1");
 prodName.textContent = product.name;
