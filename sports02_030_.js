@@ -609,7 +609,7 @@ var clothsData = [
       strikedoffprice: "899",
     },
   ];
-
+  // localStorage.setItem("SportsJamCart",JSON.stringify(clothsData))
   var cartdata=JSON.parse(localStorage.getItem("SportsJamCart"))||[]
   clothsData.map(function(elem){
       var box=document.createElement("div");
@@ -654,6 +654,7 @@ var clothsData = [
     cartdata.push(elem);
     localStorage.setItem("SportsJamCart",JSON.stringify(cartdata));
     alert(" item Added to cart");
+    window.location.href = "cart.html"
   }
 
   const btns =document.querySelectorAll(".btn");

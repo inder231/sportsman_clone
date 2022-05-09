@@ -119,8 +119,12 @@
     background-color:rgb(255,102,0);
     border-radius:2px ;
     border: 0px;
+    text-decoration: none;
 }
-
+#Rbuttons > div:nth-child(2) > button a{
+    text-decoration: none;
+    color:white;
+}
 #Rsummary{
     font-family: opensans,Arial,Helvetica,sans-serif;
     margin-top: 25px;
