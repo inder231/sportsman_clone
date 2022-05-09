@@ -1,0 +1,36 @@
+#box {
+    width: 27%;
+    margin: auto;
+
+}
+
+.image {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 100px;
+}
+
+button {
+   
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: blue;
+    font-size: 22px;
+}
+
+#imgbox {
+    width: 400px;
+    height: 400px;
+}
